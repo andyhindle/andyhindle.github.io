@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宝宝会走了-学步期宝宝护理与成长指南</title>
+    <meta name="description" content="宝宝会走了是每个家庭的重要时刻。这里提供宝宝学步阶段的科学护理知识、安全防护建议、营养饮食搭配以及常见问题解答，帮助父母陪伴宝宝迈出人生第一步。">
+    <meta name="keywords" content="宝宝会走了,宝宝学步,幼儿走路,学步期护理,宝宝安全,婴幼儿发育">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: #faf7f2;
+            color: #333;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        a {
+            color: #e07a5f;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* 顶部信息栏 */
+        .top-bar {
+            background-color: #f4e9e1;
+            padding: 8px 0;
+            font-size: 14px;
+            color: #8d6e63;
+        }
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .top-bar span {
+            margin-right: 15px;
+        }
+        .top-bar .social-links a {
+            margin-left: 15px;
+            color: #8d6e63;
+        }
+        .top-bar .social-links a:hover {
+            color: #e07a5f;
+        }
+        
+        /* 页眉 */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 20px 0;
+            border-bottom: 3px solid #e07a5f;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo-icon {
+            font-size: 40px;
+            margin-right: 12px;
+            color: #e07a5f;
+        }
+        .logo-text h1 {
+            font-size: 28px;
+            color: #3d2c2e;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .logo-text p {
+            font-size: 14px;
+            color: #999;
+            margin-top: 2px;
+        }
+        .header-search {
+            display: flex;
+            align-items: center;
+        }
+        .header-search input {
+            padding: 10px 15px;
+            border: 2px solid #e0d5ce;
+            border-radius: 25px 0 0 25px;
+            width: 250px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .header-search input:focus {
+            border-color: #e07a5f;
+        }
+        .header-search button {
+            background-color: #e07a5f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 0 25px 25px 0;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .header-search button:hover {
+            background-color: #c9654b;
+        }
+        
+        /* 导航 */
+        nav {
+            background-color: #fff;
+            padding: 0;
+            border-bottom: 1px solid #eee;
+        }
+        .nav-list {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+        }
+        .nav-list li {
+            margin: 0;
+        }
+        .nav-list a {
+            display: block;
+            padding: 14px 24px;
+            color: #555;
+            font-weight: 500;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+        }
+        .nav-list a:hover, .nav-list a.active {
+            color: #e07a5f;
+            border-bottom-color: #e07a5f;
+            text-decoration: none;
+            background-color: #fdf6f2;
+        }
+        
+        /* Hero 区域 */
+        .hero {
+            background: linear-gradient(135deg, #fdf6f2 0%, #f8ece6 50%, #f3e0d8 100%);
+            padding: 60px 0;
+            margin-bottom: 40px;
+        }
+        .hero .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .hero-text {
+            flex: 1 1 500px;
+            padding-right: 30px;
+        }
+        .hero-text h2 {
+            font-size: 36px;
+            color: #3d2c2e;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        .hero-text p {
+            font-size: 17px;
+            color: #5f4e4a;
+            margin-bottom: 30px;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .btn-primary {
+            background-color: #e07a5f;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #c9654b;
+            text-decoration: none;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(224,122,95,0.3);
+        }
+        .btn-outline {
+            background-color: transparent;
+            color: #e07a5f;
+            border: 2px solid #e07a5f;
+        }
+        .btn-outline:hover {
+            background-color: #e07a5f;
+            color: white;
+            text-decoration: none;
+        }
+        .hero-image {
+            flex: 1 1 300px;
+            text-align: center;
+            font-size: 150px;
+            color: #e07a5f;
+            opacity: 0.8;
+        }
+        
+        /* 通用区块 */
+        .section {
+            padding: 50px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-title h2 {
+            font-size: 28px;
+            color: #3d2c2e;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: #e07a5f;
+            border-radius: 3px;
+        }
+        .section-title p {
+            color: #999;
+            margin-top: 15px;
+            font-size: 15px;
+        }
+        
+        /* 里程碑时间线 */
+        .milestones {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            position: relative;
+        }
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: 5%;
+            right: 5%;
+            height: 4px;
+            background: #f0e0d8;
+            border-radius: 4px;
+            z-index: 0;
+        }
+        .timeline-item {
+            background: #fff;
+            border: 1px solid #f0e0d8;
+            border-radius: 15px;
+            padding: 25px;
+            width: calc(25% - 20px);
+            position: relative;
+            z-index: 1;
+            transition: transform 0.3s;
+        }
+        .timeline-item:hover {
+            transform: translateY(-5px);
+        }
+        .timeline-item .age {
+            font-size: 22px;
+            font-weight: 700;
+            color: #e07a5f;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .timeline-item .icon {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+        .timeline-item h3 {
+            font-size: 18px;
+            color: #3d2c2e;
+            margin-bottom: 8px;
+        }
+        .timeline-item p {
+            font-size: 14px;
+            color: #777;
+        }
+        
+        /* 卡片网格 */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            border: 1px solid #f5eee9;
+        }
+        .card:hover {
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transform: translateY(-3px);
+        }
+        .card-icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #3d2c2e;
+        }
+        .card p {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .card a.read-more {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        /* 安全提示 */
+        .safety {
+            background-color: #fdf6f2;
+            border-radius: 20px;
+            padding: 40px;
+            border-left: 5px solid #e07a5f;
+        }
+        .safety h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #3d2c2e;
+        }
+        .safety-list {
+            list-style: none;
+        }
+        .safety-list li {
+            padding: 12px 0;
+            border-bottom: 1px dashed #e0d5ce;
+            display: flex;
+            align-items: flex-start;
+        }
+        .safety-list li:last-child {
+            border-bottom: none;
+        }
+        .safety-list .check {
+            color: #e07a5f;
+            margin-right: 12px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        /* 营养专区 */
+        .nutrition {
+            background: #fff;
+            border-radius: 20px;
+            padding: 40px;
+        }
+        
+        /* 常见问题 */
+        .faq-section {
+            background-color: #fdf6f2;
+            padding: 50px 0;
+        }
+        .faq-item {
+            background: white;
+            border-radius: 10px;
+            padding: 20px 25px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            border-left: 4px solid #e07a5f;
+        }
+        .faq-item h3 {
+            font-size: 17px;
+            color: #3d2c2e;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+        .faq-item p {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        /* 底部 */
+        footer {
+            background-color: #3d2c2e;
+            color: #d8c8c3;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-content h4 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 17px;
+        }
+        .footer-content ul {
+            list-style: none;
+        }
+        .footer-content ul li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .footer-content ul li a {
+            color: #d8c8c3;
+        }
+        .footer-content ul li a:hover {
+            color: #e07a5f;
+        }
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #5f4e4a;
+            padding-top: 20px;
+            font-size: 13px;
+            color: #a08d88;
+        }
+        
+        /* 响应式 */
+        @media (max-width: 992px) {
+            .timeline-item {
+                width: calc(50% - 20px);
+            }
+            .timeline::before {
+                display: none;
+            }
+            .grid-3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            .header-search input {
+                width: 180px;
+            }
+            .hero-text h2 {
+                font-size: 28px;
+            }
+            .hero-image {
+                font-size: 100px;
+                margin-top: 20px;
+            }
+            .grid-3, .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .timeline-item {
+                width: 100%;
+            }
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .nav-list a {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+            .section {
+                padding: 30px 0;
+            }
+            .milestones, .safety, .nutrition {
+                padding: 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            .top-bar .container {
+                justify-content: center;
+                text-align: center;
+            }
+            .nav-list {
+                justify-content: flex-start;
+                overflow-x: auto;
+                flex-wrap: nowrap;
+            }
+            .nav-list a {
+                white-space: nowrap;
+            }
+            .hero {
+                padding: 40px 0;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+    <!-- 顶部信息栏 -->
+    <div class="top-bar">
+        <div class="container">
+            <div>
+                <span>📅 2025年最新育儿知识</span>
+                <span>👶 专注0-3岁宝宝成长</span>
+            </div>
+            <div class="social-links">
+                <a href="#">关于我们</a>
+                <a href="#">联系我们</a>
+                <a href="#">帮助中心</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页眉 -->
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo-area">
+                    <div class="logo-icon">👣</div>
+                    <div class="logo-text">
+                        <h1>宝宝学步乐园</h1>
+                        <p>陪伴宝宝迈出人生第一步</p>
+                    </div>
+                </div>
+                <div class="header-search">
+                    <input type="text" placeholder="搜索育儿知识...">
+                    <button type="button">搜索</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav>
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#" class="active">首页</a></li>
+                <li><a href="#">学步指导</a></li>
+                <li><a href="#">安全防护</a></li>
+                <li><a href="#">营养辅食</a></li>
+                <li><a href="#">早教游戏</a></li>
+                <li><a href="#">成长记录</a></li>
+                <li><a href="#">专家问答</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h2>宝宝会走了！<br>这是值得铭记的时刻</h2>
+                <p>从蹒跚学步到独立行走，宝宝的每一个进步都让父母欣喜不已。当宝宝迈出第一步时，意味着他们的肌肉力量、平衡能力和协调能力都发展到了新的阶段。本指南将帮助您了解学步期的关键知识，让陪伴更加从容。</p>
+                <div class="hero-buttons">
+                    <a href="#milestones" class="btn btn-primary">学步里程碑</a>
+                    <a href="#safety" class="btn btn-outline">安全防护要点</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                🌈
+            </div>
+        </div>
+    </section>
+
+    <!-- 学步里程碑 -->
+    <section class="section" id="milestones">
+        <div class="container">
+            <div class="section-title">
+                <h2>宝宝学步发展阶段</h2>
+                <p>了解每个阶段的特征，更好地陪伴宝宝成长</p>
+            </div>
+            <div class="milestones">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="age">8-10个月</span>
+                        <div class="icon">🧍</div>
+                        <h3>扶站阶段</h3>
+                        <p>宝宝开始能扶着家具站立，并尝试沿边缘移动。这是腿部力量和平衡感发展的重要时期。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="age">10-12个月</span>
+                        <div class="icon">🤸</div>
+                        <h3>巡航阶段</h3>
+                        <p>宝宝能扶着家具或大人双手行走，开始尝试松开一只手，甚至短暂独立站立。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="age">11-14个月</span>
+                        <div class="icon">👣</div>
+                        <h3>独立迈步</h3>
+                        <p>宝宝开始尝试独立行走，起初可能只有几步，但这是真正的"会走了"里程碑时刻。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="age">14-18个月</span>
+                        <div class="icon">🏃</div>
+                        <h3>熟练行走</h3>
+                        <p>宝宝走得更稳，能转弯、停下、蹲下再站起来，甚至开始尝试小跑。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学步期护理要点 -->
+    <section class="section" style="background: #fff;">
+        <div class="container">
+            <div class="section-title">
+                <h2>学步期护理知识</h2>
+                <p>掌握科学的护理方法，让宝宝走得健康又自信</p>
+            </div>
+            <div class="grid-3">
+                <article class="card">
+                    <div class="card-icon">👟</div>
+                    <h3>学步鞋选择</h3>
+                    <p>学步初期，赤脚或穿防滑袜是最佳选择。如果穿鞋，选择鞋底薄软、宽头、透气性好的学步鞋，让脚趾有足够活动空间，避免影响足部发育。</p>
+                    <a href="#" class="read-more">了解更多 →</a>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🧠</div>
+                    <h3>心理鼓励</h3>
+                    <p>宝宝摔倒后不要过度紧张，用轻松的语气鼓励他站起来。多给予积极正面的反馈，避免因大人的过度反应让宝宝产生畏惧心理。</p>
+                    <a href="#" class="read-more">了解更多 →</a>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🦴</div>
+                    <h3>骨骼发育</h3>
+                    <p>宝宝走路早晚与骨骼发育相关，不必与其他孩子比较。只要宝宝精神状态好、动作发育在正常范围内，走路稍晚也无需担心。如有疑虑可咨询儿科医生。</p>
+                    <a href="#" class="read-more">了解更多 →</a>
+                </article>
+                <article class="card">
+                    <div class="card-icon">💤</div>
+                    <h3>充足睡眠</h3>
+                    <p>学步期活动量增大，宝宝需要更多休息。保证每天充足的睡眠时间，有助于身体恢复和生长激素分泌，对学步能力的发展也很重要。</p>
+                    <a href="#" class="read-more">了解更多 →</a>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🤝</div>
+                    <h3>牵手练习</h3>
+                    <p>每天固定时间牵着宝宝的手练习走路，注意不要过度用力拉扯宝宝手臂，以免造成关节损伤。让宝宝保持自己舒服的节奏。</p>
+                    <a href="#" class="read-more">了解更多 →</a>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>游戏引导</h3>
+                    <p>用玩具吸引、亲子追逐等游戏方式激发宝宝的行走兴趣。将学步融入日常游戏，让宝宝在快乐中自然掌握走路技能。</p>
+                    <a href="#" class="read-more">了解更多 →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 安全防护 -->
+    <section class="section" id="safety">
+        <div class="container">
+            <div class="section-title">
+                <h2>居家安全防护要点</h2>
+                <p>宝宝会走了，家中的安全隐患需要重新排查</p>
+            </div>
+            <div class="safety">
+                <h3>🏠 学步期居家安全清单</h3>
+                <ul class="safety-list">
+                    <li><span class="check">✓</span>家具边角粘贴防撞条，特别是茶几、桌角和电视柜边缘</li>
+                    <li><span class="check">✓</span>窗户安装防护栏，防止宝宝攀爬；窗帘绳要收好</li>
+                    <li><span class="check">✓</span>地面保持干燥整洁，移除可能绊倒宝宝的电线、小物件</li>
+                    <li><span class="check">✓</span>楼梯口安装安全门栏，防止宝宝独自上下楼梯</li>
+                    <li><span class="check">✓</span>将危险物品（药品、清洁剂、剪刀等）放到宝宝够不到的高处</li>
+                    <li><span class="check">✓</span>家具固定上墙，防止宝宝攀爬时倾倒</li>
+                    <li><span class="check">✓</span>厨房和卫生间门口加装安全门栏或保持关闭</li>
+                    <li><span class="check">✓</span>检查地面是否有小颗粒物品，防止宝宝捡起放入口中</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 营养与饮食 -->
+    <section class="section" style="background: #fff;">
+        <div class="container">
+            <div class="section-title">
+                <h2>学步期营养搭配</h2>
+                <p>均衡营养支撑宝宝探索世界的能量</p>
+            </div>
+            <div class="grid-3">
+                <article class="card">
+                    <div class="card-icon">🥦</div>
+                    <h3>钙质补充</h3>
+                    <p>骨骼发育需要充足的钙。推荐食物：牛奶、酸奶、奶酪、豆腐、绿叶蔬菜等。每日奶量建议保持500ml左右。</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🥚</div>
+                    <h3>蛋白质</h3>
+                    <p>肌肉的生长离不开蛋白质。推荐食物：鸡蛋、鱼肉、瘦肉、豆类。每天保证1个鸡蛋，适量肉类摄入。</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🍚</div>
+                    <h3>能量供给</h3>
+                    <p>学步期活动消耗大，主食要充足。推荐全谷物米面、薯类等，搭配适量健康脂肪如牛油果、坚果泥。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>父母最关心的学步问题</h2>
+                <p>专家解答学步期的常见疑惑</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q：宝宝走路晚需要担心吗？</h3>
+                <p>每个宝宝的发育节奏不同，大部分宝宝在9-18个月之间学会独立行走都属于正常范围。如果宝宝18个月后仍不能独立行走，或存在其他发育迟缓表现，建议咨询儿科医生进行专业评估。</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q：宝宝走路时总是踮脚怎么办？</h3>
+                <p>学步初期踮脚是常见现象，通常随着走路熟练会自然改善。但如果宝宝一直踮脚走路，或伴有肌肉僵硬等情况，建议咨询医生排除肌张力问题。</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q：学步车可以用吗？</h3>
+                <p>不建议使用传统学步车。研究表明学步车不仅没有帮助，还可能影响宝宝走路姿势，增加摔倒和受伤风险。推荐使用手推学步玩具或直接牵手练习。</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q：宝宝走路摔倒了要不要马上扶？</h3>
+                <p>先观察宝宝的反应。如果只是轻微摔倒且宝宝没有哭闹，鼓励他自己站起来。如果宝宝哭了或摔得较重，及时抱起安抚。避免过度紧张，让宝宝学会面对小挫折。</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q：宝宝会走后需要穿什么样的鞋子？</h3>
+                <p>室内尽量赤脚或穿防滑袜，有助于足底感知和平衡发展。外出时选择鞋头宽、鞋底薄且防滑的学步鞋，材料透气柔软，尺码要合适，不宜过大。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部信息 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h4>宝宝学步乐园</h4>
+                    <p>专注0-3岁婴幼儿成长发育，提供科学、实用的育儿知识与家庭指导。</p>
+                </div>
+                <div>
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">学步发展阶段</a></li>
+                        <li><a href="#">安全防护指南</a></li>
+                        <li><a href="#">辅食营养搭配</a></li>
+                        <li><a href="#">早期教育游戏</a></li>
+                        <li><a href="#">专家在线问答</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>📧 contact@baobao.com</li>
+                        <li>📞 400-800-1234</li>
+                        <li>🕘 周一至周五 9:00-18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 宝宝学步乐园 版权所有 | 育儿知识仅供参考，如有疑问请咨询专业医生</p>
+            </div>
+        </div>
+    </footer>
+</body>
+                                                                                 </html>
